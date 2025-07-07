@@ -11,6 +11,7 @@ docker run --name ipsec-vpn-server --restart=always --env-file ./vpn.env  -v /mn
 VPN_IPSEC_PSK=your_ipsec_pre_shared_key
 VPN_USER=your_vpn_username
 VPN_PASSWORD=your_vpn_password
+VPN_ENABLE_MODP1024=yes
 
 docker logs ipsec-vpn-server
 ```
